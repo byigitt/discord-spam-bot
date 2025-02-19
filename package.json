@@ -1,0 +1,23 @@
+{
+  "name": "anti-spam-for-app",
+  "version": "1.0.0",
+  "description": "A Discord bot with slash command and event handlers",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon --exec \"node src/deploy-commands.js && node src/index.js\"",
+    "deploy-commands": "node src/deploy-commands.js",
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "discord.js"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.18.0",
+    "dotenv": "^16.4.7",
+    "nodemon": "^3.1.9"
+  }
+}
